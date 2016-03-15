@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app="store">
+	<head>
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body ng-controler="StoreController">
+
+		<p>	
+			
+		</p>	
+
+	</body>
+</html>
