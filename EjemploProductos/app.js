@@ -6,15 +6,14 @@ var app = angular.module('store', ['store-products']);
 
 	app.controller('StoreCtrl',['$http',function($http){
 		var store = this;
-        store.products = [];
-		//this.products = gem;	
+        store.products = [];		
         
         $http.get('products.json').success(function(data){            
             store.products = data;            
         }); 
         
 		
-	}]);	 // Fin SttoreCtrl
+	}]); // Fin StoreCtrl
 
     
     
@@ -28,73 +27,7 @@ var app = angular.module('store', ['store-products']);
 
 
 	}); // Fin ReviewController
-    
-    
-    // DIRECTIVAS   
-        
-
-    
-    
-    
-	
-	var gem = [{	
-			name: 'Dodecahedron',
-			price: 2.95,
-			description: '. . .',
-			canPurchase: true,
-			soldOut: false,
-			images: [{
-							full: 'full.png',
-							thumb: 'thumb.png',
-					 },
-					 {
-							thumb: 'thumb.png',
-							full: 'full.png',							
-					 }], // Fin images
-        
-			reviews: [{
-							stars: 5,
-							body: "I love this shit",
-							author:"joe@thomas.com"	
-					  },
-					  {
-							stars: 1,
-							body: "this product is something",
-							author: "hello@thomas.com"	
-					  }]// Fin reviews		
-			             
-                },
-               {	
-			name: 'Otro producto',
-			price: 2.95,
-			description: '. . .',
-			canPurchase: true,
-			soldOut: false,
-			images: [{
-							full: 'thumb.png',
-							thumb: 'full.png',
-					 },
-					 {
-							thumb: 'full.png',
-							full: 'thumb.png',							
-					 }], // Fin images
-        
-			reviews: [{
-							stars: 5,
-							body: "I love this shit",
-							author:"joe@thomas.com"	
-					  },
-					  {
-							stars: 1,
-							body: "this product is something",
-							author: "hello@thomas.com"	
-					  }]// Fin reviews		
-			             
-                }
-              
-              
-              ] // Fin gem
-			
+    		
 	
 })();
 

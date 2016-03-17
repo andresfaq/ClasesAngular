@@ -6,15 +6,20 @@
         <link rel="stylesheet" src="style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<!-- Optional theme 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
 
 		
 	</head>
-	<body  ng-controller="StoreCtrl as store">
+	<body class="container" ng-controller="StoreCtrl as store">
 
-		
-		<ul class="list-group">
+		<div class="panel panel-primary">
+
+		<div class="panel-heading"> <strong>Ejemplo Productos</strong> </div>
+
+		<div class="panel-body">
+
+			<ul class="list-group">
 			<li class="list-group-item" ng-repeat="product in store.products">
 				
 				<h3 product-title></h3>				
@@ -28,6 +33,13 @@
 				
 			</li>
 		</ul>
+			
+
+		</div>	
+			
+
+		</div>
+		
 
 	<!-- SCRIPTS-->	
 

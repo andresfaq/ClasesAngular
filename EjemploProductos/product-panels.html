@@ -62,16 +62,20 @@
 			                </select>
 			              </fieldset>
 			              <fieldset class="form-group">
-			                <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="Write a short review of the product..." title="Review" required></textarea>
+			                <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="Write a short review of the product..." title="Review" required ></textarea>
 			              </fieldset>
 			              <fieldset class="form-group">
 			                <input ng-model="reviewCtrl.review.author" type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email"  required />
 			              </fieldset>
                           <fieldset class="form-group">
-			                <div> reviewForm is {{reviewForm.$valid}} </div>
+			                <div> <strong>
+			                	El formulario es {{reviewForm.$valid}} 
+			                </strong></div>
 			              </fieldset>   
 			              <fieldset class="form-group">
-			                <input type="submit" class="btn btn-primary pull-right" value="Submit Review" /> 
+			                <input type="submit" class="btn btn-primary pull-right" value="Submit Review" 
+			                ng-class="{'btn-success': reviewForm.$valid}"
+			                ng-disabled="!reviewForm.$valid"/> 
 			              </fieldset>
 			            </form>
 

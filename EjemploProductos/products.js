@@ -7,7 +7,7 @@ app.directive('productTitle',function () {
 		restrict: 'A',
 		templateUrl: 'product-title.html'
 	};
-    })
+    });
     
     app.directive('productPanel', function () {
 	return {
