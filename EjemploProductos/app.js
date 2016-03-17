@@ -9,9 +9,8 @@ var app = angular.module('store', ['store-products']);
         store.products = [];
 		//this.products = gem;	
         
-        $http.get('/Clase2/products.json').success(function(data){            
-            store.products = data;
-            alert('Se supone se cargaron los datos :v')
+        $http.get('products.json').success(function(data){            
+            store.products = data;            
         }); 
         
 		
